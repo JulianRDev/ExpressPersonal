@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Post Your Cats!</h1>
+    <form action="/addcat" method="post" enctype="multipart/form-data">
+        <input type="text" placeholder="Cat Name" name="catName">
+        <input type="file" name="url">
+
+        <button type="submit" id="post">Post</button>
+    </form>
+
+    <section class="kittys">
+        <ul class="cats">
+            <% for(var i=0; i<images.length; i++) {%>
+                <!-- this is the messages colection -->
+                <li class="message">
+                    <span>
+                        <%= images[i].catName %>
+                    </span>
+                    <img src="<%= images[i].imgurl %>" alt="">
+                    <% if(images[i].available === true){ %>
+                        <button class="adopt" >adopt this pet</button>
+                    <% }else{ %>
+                        <span>This cat has a new home already, I'm Sorry</span>
+                    <% } %>
+                    <span><i class="fa fa-ban" aria-hidden="true"></i></span>
+                    
+                </li>
+                <% } %>
+        </ul>
+    </section>
+
+    <script src="https://kit.fontawesome.com/66fd8dd764.js" crossorigin="anonymous"></script>
+    <script src="../main.js"></script>
+</body>
+
+</html>
