@@ -8,3 +8,6 @@
 
 <h2 align="center"> Languages used</h2>
 <p align="center"> HTML, CSS, Javascript, Express, Node.js, Mongodb </p>
+
+<h2 align="center"> Lessons Learned </h2>
+<p> This was a great experience in working with the server side. Learning how to allow a user to upload a photo and then post it to the page was interesting and definitely a fun time. I hope to do more fun oprejects like this one and even build on this project itself!  </p>
