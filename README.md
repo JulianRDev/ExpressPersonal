@@ -1,6 +1,6 @@
 <h1 align="center"> Post Your Cats</h1>
 
-<p>
+<p align="center">
   A web application uwhere you can post your cats to your page as you wish. Share your cats with the world and send some love!
 </p>
 
